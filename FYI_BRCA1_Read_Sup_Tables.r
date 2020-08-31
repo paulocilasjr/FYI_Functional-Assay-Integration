@@ -2,11 +2,11 @@
 library("readxl")
 library("xlsx")
 
-#Load the main excel files - stble1 (master table) and stable 2(track reference)
+#Load the main excel files - stble1 (master table), stable 2 (track reference), and stable 3 (ENIGMA+ClinVar Reference Variants)
 stable1 = as.data.frame(read_excel("Sup_tables_GIM_JUN_2020 REV FINAL.xlsx", sheet = "STable 1", col_names = TRUE, na="", guess_max = 15000))
 stable2 = as.data.frame(read_excel("Sup_tables_GIM_JUN_2020 REV FINAL.xlsx", sheet = "STable 2", col_names = TRUE, na=""))
 stable3 = as.data.frame(read_excel("Sup_tables_GIM_JUN_2020 REV FINAL.xlsx", sheet = "STable 3", col_names = TRUE, na=""))
-stable4 = as.data.frame(read_excel("Sup_tables_GIM_JUN_2020 REV FINAL.xlsx", sheet = "STable 4", col_names = TRUE, na=""))
+
 #Preparing reference panel table [E]
 reference_panel_E <- stable1
 reference_panel_E$"T7"[!is.na(reference_panel_E$"T7")] <- NA
