@@ -858,7 +858,7 @@ stable8_E_C <- stable8_form (reference_panel_E_C_counts, stable1, assay_class_ta
 stable9_E_C <- stable9_form (hi_set_tracks_E_C, hi_set_table_E_C)
 
 #STABLE10
-stable10_E_C <- stable10_form (stable9_E_C, hi_set_table_E_C)
+stable10_E_C <- stable10_form (stable9_E_C)
 
 #STABLE11
 stable11_E_C <- stable11_form (stable1, Espec_Sens_table_E_C)
